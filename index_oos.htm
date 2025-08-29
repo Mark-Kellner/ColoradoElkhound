@@ -1,0 +1,18 @@
+<?php 
+switch ($_SERVER['HTTP_HOST'] )
+{ 
+  case  'coloradoelkhound.com':  
+  case  'www.coloradoelkhound.com': 
+    header("location: /coloradoelkhound/public/v2/index.php");
+    break;
+  
+  case  'millerridgehoa.org':  
+  case  'www.millerridgehoa.org': 
+    header("location: /miller_ridge_hoa/public/v1/index.php");
+    break;
+
+  default:
+    header("location: /miller_ridge_hoa/public/v1/index.php");
+    break; 
+}
+?> 
